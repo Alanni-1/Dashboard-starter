@@ -8,6 +8,10 @@ import {
 	UilMoneyWithdrawal,
 } from '@iconscout/react-unicons'
 
+import img1 from '../imgs/img1.png'
+import img2 from '../imgs/img2.png'
+import img3 from '../imgs/img3.png'
+
 export const SidebarData = [
 	{ id: 0, logo: <UilEstate />, text: 'Dashboard' },
 	{ id: 1, logo: <UilClipboardAlt />, text: 'Orders' },
@@ -65,5 +69,26 @@ export const CardsData = [
 				data: [10, 25, 15, 30, 12, 15, 20],
 			},
 		],
+	},
+]
+
+export const UpdatesData = [
+	{
+		img: img1,
+		name: 'Andirew Thomas',
+		noti: 'has ordered Apple smart watch 2500mh battery.',
+		time: '25 seconds age',
+	},
+	{
+		img: img2,
+		name: 'James Bond',
+		noti: 'has received Samsung gadget for charging battery.',
+		time: '30 minutes age',
+	},
+	{
+		img: img3,
+		name: 'Iron Man',
+		noti: 'has ordered Apple smart watch, samsung Gear 2500mh battery.',
+		time: '2 hours age',
 	},
 ]
