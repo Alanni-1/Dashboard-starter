@@ -6,6 +6,7 @@ import TableContainer from '@mui/material/TableContainer'
 import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
+import './Table.scss'
 
 function createData(name, trackingId, date, status) {
 	return { name, trackingId, date, status }
@@ -80,7 +81,9 @@ export default function BasicTable() {
 										{row.status}
 									</span>
 								</TableCell>
-								<TableCell align="left">Detall</TableCell>
+								<TableCell align="left" className="Detalls">
+									Detall
+								</TableCell>
 							</TableRow>
 						))}
 					</TableBody>

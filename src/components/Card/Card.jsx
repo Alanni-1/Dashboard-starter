@@ -10,6 +10,7 @@ import { UilTimes } from '@iconscout/react-unicons'
 import Chart from 'react-apexcharts' // react的图表库
 
 const Card = (props) => {
+	// 控制表格是否显示
 	const [expanded, setExpanded] = useState(false)
 
 	return (
