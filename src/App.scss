@@ -18,8 +18,29 @@
     width: 97vw;
     border-radius: 2rem;
     background-color: $glass;
-    overflow: auto;
+    overflow: hidden;
     grid-template-columns: 11rem 1fr 20rem;
     gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .App {
+    .AppGlass {
+      grid-template-columns: 10% 50% auto;
+      overflow-y: scroll  ;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    .AppGlass {
+      grid-template-columns: 1fr;
+
+      &::-webkit-scrollbar{
+        display: none;
+      }
+    }
   }
 }

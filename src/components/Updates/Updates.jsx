@@ -5,8 +5,8 @@ import './Updates.scss'
 const Updates = () => {
 	return (
 		<div className="Updates">
-			{UpdatesData.map((update) => (
-				<div className="update">
+			{UpdatesData.map((update, index) => (
+				<div className="update" key={index}>
 					<img src={update.img} alt="" />
 					<div className="noti">
 						<div style={{ marginBottom: '0.5rem' }}>

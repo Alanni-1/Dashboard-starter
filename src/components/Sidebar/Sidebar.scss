@@ -71,3 +71,60 @@
     }
   }
 }
+
+.bars {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .Sidebar {
+    .logo {
+      display: none;
+    }
+
+    .menuItem>span {
+      display: none;
+    }  
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .Sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #ffe0e0;
+    width: 55%;
+    padding-right: 1rem;
+    height: 100%;
+
+    .logo {
+      display: flex;
+    }
+
+    .menu {
+      .menuItem {
+        &:last-child {
+          position: relative;
+          margin-top: 6rem;
+        }
+
+        &>span {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .bars {
+    display: inline-block;
+    position: fixed;
+    z-index: 10;
+    background-color: #ffe0e0;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 500ms cubic-bezier(0.18, 0.81, 0.64, 1.01);
+  }
+}
